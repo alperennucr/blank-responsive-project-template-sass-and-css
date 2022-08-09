@@ -1,0 +1,1 @@
+This is a responsive SASS template. You can use this template before making a site.

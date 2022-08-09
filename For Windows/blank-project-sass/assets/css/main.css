@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("../vendor/bootstrap-5.2/css/bootstrap.min.css");
+@import url("../vendor/fontawesome/css/all.min.css");
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a, button {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover, button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+#goTpButton {
+  display: inline-block;
+  background-color: #2B73AC;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 65px;
+  right: -3px;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 8;
+}
+#goTpButton::after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 50px;
+  color: #ffffff;
+}
+#goTpButton.show-active {
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=main.css.map */

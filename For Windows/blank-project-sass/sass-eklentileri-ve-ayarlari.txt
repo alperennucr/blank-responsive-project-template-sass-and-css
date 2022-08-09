@@ -1,0 +1,26 @@
+https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented
+https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss
+
+Tercihler -> Ayarlar -> Uzantılar -> Live Sass Compile -> settings.json'da düzenle
+
+"liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**",
+        "assets/vendor/**"
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "assets/css"
+        }
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
